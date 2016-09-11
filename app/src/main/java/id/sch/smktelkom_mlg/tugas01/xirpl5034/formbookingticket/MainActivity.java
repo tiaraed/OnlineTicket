@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvHasil;
     RadioButton rbLA, rbBA, rbWA, rbTA;
     CheckBox cbBL, cbMC, cbDS;
+    Spinner spAsal, spTujuan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         cbBL = (CheckBox) findViewById(R.id.checkBoxBL);
         cbMC = (CheckBox) findViewById(R.id.checkBoxMC);
         cbDS = (CheckBox) findViewById(R.id.checkBoxDS);
+        spAsal = (Spinner) findViewById(R.id.spinnerAsal);
+        spTujuan = (Spinner) findViewById(R.id.spinnerTujuan);
 
 
 
@@ -45,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 int no = Integer.parseInt(etNO.getText().toString());
                 String hasil = null;
                 String layan = "Your Services :\n ";
+                String asal = spAsal.getSelectedItem().toString();
+                String tujuan = spTujuan.getSelectedItem().toString();
 
                 if (cbBL.isChecked()) {
                     layan += cbBL.getText() + "\n";
@@ -69,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 if (hasil == null) {
                     tvHasil.setText("Please Choose Your Plane");
                 } else {
-                    tvHasil.setText("Name : " + nama + "\n" + "Number : " + no + "\n" + "Your Plane : " + hasil + "\n" + layan);
+                    tvHasil.setText("Name : " + nama + "\n" + "Number : " + no + "\n" + "Your Plane : " + hasil + "\n" + layan + "\n" + "Departure : " + asal + "\n" + "Destination :" + tujuan);
                 }
 
             }

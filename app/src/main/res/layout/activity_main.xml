@@ -90,7 +90,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text" />
+        android:text="Services :" />
 
     <CheckBox
         android:id="@+id/checkBoxBL"
@@ -111,26 +111,27 @@
         android:text="Dessert" />
 
     <TextView
-        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text" />
+        android:text="Origin :" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/spinnerAsal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/asal" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text" />
+        android:text="Destination :" />
 
     <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/spinnerTujuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tujuan" />
 
     <Button
         android:id="@+id/buttonSub"
@@ -143,6 +144,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Sumit" />
+        tools:text="Submit" />
 
 </LinearLayout>
