@@ -93,22 +93,22 @@
         android:text="New Text" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxBL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New CheckBox" />
+        android:text="Blanket" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBoxMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New CheckBox" />
+        android:text="Main Course" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkBoxDS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New CheckBox" />
+        android:text="Dessert" />
 
     <TextView
         android:id="@+id/textView5"

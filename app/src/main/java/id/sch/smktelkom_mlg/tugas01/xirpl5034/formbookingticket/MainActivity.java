@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button bSub;
     TextView tvHasil;
     RadioButton rbLA, rbBA, rbWA, rbTA;
-
+    CheckBox cbBL, cbMC, cbDS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         rbBA = (RadioButton) findViewById(R.id.radioButtonBA);
         rbWA = (RadioButton) findViewById(R.id.radioButtonWA);
         rbTA = (RadioButton) findViewById(R.id.radioButtonTA);
+        cbBL = (CheckBox) findViewById(R.id.checkBoxBL);
+        cbMC = (CheckBox) findViewById(R.id.checkBoxMC);
+        cbDS = (CheckBox) findViewById(R.id.checkBoxDS);
 
 
 
@@ -40,6 +44,18 @@ public class MainActivity extends AppCompatActivity {
                 String nama = etNama.getText().toString();
                 int no = Integer.parseInt(etNO.getText().toString());
                 String hasil = null;
+                String layan = "Your Services :\n ";
+
+                if (cbBL.isChecked()) {
+                    layan += cbBL.getText() + "\n";
+                }
+                if (cbMC.isChecked()) {
+                    layan += cbMC.getText() + "\n";
+                }
+                if (cbDS.isChecked()) {
+                    layan += cbDS.getText() + "\n";
+                }
+
 
                 if (rbLA.isChecked()) {
                     hasil = rbLA.getText().toString();
@@ -53,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 if (hasil == null) {
                     tvHasil.setText("Please Choose Your Plane");
                 } else {
-                    tvHasil.setText("Name : " + nama + "\n" + "Number : " + no + "\n" + "Your Plane : " + hasil);
+                    tvHasil.setText("Name : " + nama + "\n" + "Number : " + no + "\n" + "Your Plane : " + hasil + "\n" + layan);
                 }
 
             }
