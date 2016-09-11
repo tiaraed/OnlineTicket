@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 if (hasil == null) {
                     tvHasil.setText("Please Choose Your Plane");
                 } else {
-                    tvHasil.setText("Name : " + nama + "\n" + "Number : " + no + "\n" + "Your Plane : " + hasil + "\n" + layan + "\n" + "Departure : " + asal + "\n" + "Destination :" + tujuan);
+                    tvHasil.setText("Name : " + nama + "\n" + "Number : " + no + "\n" + "Your Plane : " + hasil + "\n" + layan + "Departure : " + asal + "\n" + "Destination :" + tujuan);
                 }
 
             }

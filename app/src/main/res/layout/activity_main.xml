@@ -15,7 +15,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Booking Ticket" />
+        android:text="Booking Ticket"
+        android:textColor="@color/accent_material_dark"
+        android:textSize="16dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -28,7 +30,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name :" />
+        android:text="Name :"
+        android:textColor="@color/accent_material_dark" />
 
     <EditText
         android:id="@+id/editTextNama"
@@ -39,7 +42,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number :" />
+        android:text="Number :"
+        android:textColor="@color/accent_material_dark" />
 
     <EditText
         android:id="@+id/editTextNO"
@@ -51,7 +55,8 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pesawat :" />
+        android:text="Pesawat :"
+        android:textColor="@color/accent_material_dark" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -62,28 +67,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Lion Air" />
+            android:text="Lion Air"
+            android:textColor="@color/accent_material_dark" />
 
         <RadioButton
             android:id="@+id/radioButtonBA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Batik Air" />
+            android:text="Batik Air"
+            android:textColor="@color/accent_material_dark" />
 
         <RadioButton
             android:id="@+id/radioButtonWA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Wings Air" />
+            android:text="Wings Air"
+            android:textColor="@color/accent_material_dark" />
 
         <RadioButton
             android:id="@+id/radioButtonTA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Thai Lion Air" />
+            android:text="Thai Lion Air"
+            android:textColor="@color/accent_material_dark" />
     </RadioGroup>
 
     <TextView
@@ -96,24 +105,28 @@
         android:id="@+id/checkBoxBL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blanket" />
+        android:text="Blanket"
+        android:textColor="@color/accent_material_dark" />
 
     <CheckBox
         android:id="@+id/checkBoxMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Course" />
+        android:text="Main Course"
+        android:textColor="@color/accent_material_dark" />
 
     <CheckBox
         android:id="@+id/checkBoxDS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dessert" />
+        android:text="Dessert"
+        android:textColor="@color/accent_material_dark" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Origin :" />
+        android:text="Origin :"
+        android:textColor="@color/accent_material_dark" />
 
     <Spinner
         android:id="@+id/spinnerAsal"
@@ -125,7 +138,8 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Destination :" />
+        android:text="Destination :"
+        android:textColor="@color/accent_material_dark" />
 
     <Spinner
         android:id="@+id/spinnerTujuan"
@@ -135,15 +149,17 @@
 
     <Button
         android:id="@+id/buttonSub"
-        android:layout_width="wrap_content"
+        android:layout_width="355dp"
         android:layout_height="wrap_content"
-        android:text="SUBMIT" />
+        android:text="SUBMIT"
+        android:textColor="#684f4f" />
 
     <TextView
         android:id="@+id/textViewHasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:textColor="@color/accent_material_dark"
         tools:text="Submit" />
 
 </LinearLayout>
